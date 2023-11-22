@@ -1,0 +1,22 @@
+
+<h2>AJOUT D'UN RÉFÉRENTIEL</h2>
+
+
+<form #resa_form="ngForm" (ngSubmit)="resa_form.valid && addBook()" id="addLibraryForm">
+    <label for="title">Nom du Référentiel</label>
+    <input type="text" id="title" name="title" [(ngModel)]="newBook.title" required />
+    
+    <label for="category">catégorie</label>
+    <input type="text" id="category" name="category" [(ngModel)]="newBook.category" required />
+
+    <label for="quantity">Nombre d'exemplaires:</label>
+    <input type="quantity" id="quantity" name="quantity" [(ngModel)]="newBook.quantity" required />
+
+    <label for="book">Sélectionnez un référentiel:</label>
+    <select id="book" name="book" [(ngModel)]="newBook.libraries" required>
+        <option *ngFor="let bookOption of bookOptions" [ngValue]="bookOption">{{ bookOption.title }} {{ bookOption.category }} {{bookOption.quantity}}</option>
+    </select>
+
+
+    <button type="submit" id="ajouterBook">Ajouter un référentiel </button>
+</form>

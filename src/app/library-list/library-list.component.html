@@ -1,0 +1,14 @@
+<div *ngFor="let library of libraryList" class="library-container">
+    <div class="collection">{{ library.collection }}</div>
+
+    <div class="location">
+        {{ library.location }}
+        {{ library.dateInventory }}
+    </div>
+
+    <div *ngFor="let book of library.books" class="book-container">
+        {{ book.title }}
+        {{ book.category }}
+        {{ book.quantity }}
+    </div>
+</div>

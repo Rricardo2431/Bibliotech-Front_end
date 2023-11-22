@@ -1,0 +1,10 @@
+<h1>Hello</h1>
+
+
+<div class="book-container">
+    <input type="text" [(ngModel)]="id" />
+    <p class="deleteBook">{{ singleBookId.title }}</p>
+    <p>{{ singleBookId.category }}</p>
+    <p>{{ singleBookId.quantity }}</p>
+    <button (click)="deleteBookById(id)">Supprimer le référentiel</button>
+</div>

@@ -1,0 +1,11 @@
+
+
+<h2>Choix de la Bibliothèque</h2>
+
+<div class="library-container">
+    <input type="text" [(ngModel)]="id" />
+    <p class="collection">{{ singleLibraryId.collection }}</p>
+    <p>{{ singleLibraryId.location }}</p>
+    <p>{{ singleLibraryId.dateInventory }}</p>
+    <button (click)="getLibraryById(id)">selectionne ta bilbliothèque</button>
+</div>

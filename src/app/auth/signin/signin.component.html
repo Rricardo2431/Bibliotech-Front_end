@@ -1,0 +1,26 @@
+<h1>Connexion</h1>
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="firstName">Prénom:</label>
+    <input type="text" id="firstName" [(ngModel)]="firstName" name="firstName" required>
+  </div>
+
+  <div>
+    <label for="lastName">Nom:</label>
+    <input type="text" id="lastName" [(ngModel)]="lastName" name="lastName" required>
+  </div>
+
+
+  <div>
+    <label for="password">Mot de passe:</label>
+    <input type="password" id="password" [(ngModel)]="password" name="password" required>
+  </div>
+
+  <div>
+
+
+  </div>
+
+  <button type="submit">Connexion</button>
+</form>
+

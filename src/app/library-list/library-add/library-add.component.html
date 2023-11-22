@@ -1,0 +1,23 @@
+
+
+<h2>AJOUT D'UNE BIBLIOTHEQUE</h2>
+
+
+<form #resa_form="ngForm" (ngSubmit)="resa_form.valid && addLibrary()" id="addLibraryForm">
+    <label for="collection">Nom de la collection</label>
+    <input type="text" id="collection" name="collection" [(ngModel)]="newLLibrary.collection" required />
+    
+    <label for="location">Localisation</label>
+    <input type="text" id="location" name="location" [(ngModel)]="newLLibrary.location" required />
+
+    <label for="dateInventory">Date de l'inventaire:</label>
+    <input type="datetime-local" id="dateInventory" name="dateInventory" [(ngModel)]="newLLibrary.dateInventory" required />
+
+    <label for="librarian">Sélectionnez un bibliothécaire:</label>
+    <select id="librarian" name="librarian" [(ngModel)]="newLLibrary.librarians" required>
+        <option *ngFor="let librarianOption of librarianOptions" [ngValue]="librarianOption">{{ librarianOption.firstName }} {{ librarianOption.lastName }}</option>
+    </select>
+
+
+    <button type="submit" id="ajouterLibrary">Ajouter une bibliothèque</button>
+</form>

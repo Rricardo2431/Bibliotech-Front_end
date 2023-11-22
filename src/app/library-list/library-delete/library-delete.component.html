@@ -1,0 +1,10 @@
+<h1>Hello</h1>
+
+
+<div class="library-container">
+    <input type="text" [(ngModel)]="id" />
+    <p class="deleteCollection">{{ singleLibraryId.collection }}</p>
+    <p>{{ singleLibraryId.location }}</p>
+    <p>{{ singleLibraryId.dateInventory }}</p>
+    <button (click)="deleteLibraryById(id)">Supprimer la bibliothèque</button>
+</div>

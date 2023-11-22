@@ -1,0 +1,19 @@
+
+<nav>
+    <a href="/librarian-signup"><button type="button">Inscription</button></a>
+    <a href="/librarian-signin"><button type="button">Connexion</button></a>
+    <a href="/librarian-signin"><button type="button">Déconnexion</button></a>
+
+</nav>
+
+
+<h1>BIBLIOTECH</h1>
+
+<div class="redirect">
+    <button (click)="redirectionPage('/library-list')">Liste des bibliothèques</button>
+    <button (click)="redirectionPageTwo('/book-list')">Liste des référentiels</button>
+    <button (click)="redirectionPageThree('/book-one')">Détails du référentiel</button>
+    <button (click)="redirectionPageFour('/library-one')">Détails d'une bibliothèque</button>
+    <button (click)="redirectionPageFive('/library-add')">Ajout d'une bibliothèque</button>
+    <button (click)="redirectionPageSix('/book-add')">Ajout d'un référentiel</button>
+  </div>

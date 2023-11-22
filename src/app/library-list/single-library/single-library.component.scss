@@ -1,0 +1,48 @@
+.library-container {
+    background-color: #bfbcbf; 
+    padding: 85px;
+    border-radius: 35px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 300px; 
+    margin: 185px; 
+}
+
+h2 {
+    margin: 70px; 
+    margin-bottom: 34px; 
+    font-size: 4.5rem; 
+}
+
+
+input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 5px;
+    border: 1px solid #353535;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+button {
+    background-color: #7b68ee; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #5c4dae; 
+}
+
+p {
+    margin: 0; 
+    margin-bottom: 8px;
+    font-size: 25px;
+}
+
+.collection {
+    font-weight: bold; 
+}
