@@ -6,6 +6,7 @@ import { Library } from 'src/app/models/library';
 import { Book } from 'src/app/models/book';
 import { librarian } from 'src/app/models/librarian';
 
+
 @Component({
   selector: 'app-library-add',
   templateUrl: './library-add.component.html',
@@ -17,7 +18,8 @@ export class LibraryAddComponent implements OnInit {
   constructor(
     private addSingleLibrary: LibraryService,
     private httpclient: HttpClient,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+
   ) { }
 
   listModelLibrary: Library[] = [];
@@ -38,17 +40,17 @@ export class LibraryAddComponent implements OnInit {
       .subscribe((data: Library[]) => {
         this.listModelLibrary = data;
         console.log(data);
-       
+
       })
   }
   addLibrary(): void {
     this.addSingleLibrary.addLLibrary(this.newLLibrary)
       .subscribe((data: Library) => {
         console.log(data);
-       
+
       });
-  
-}
+
+  }
 
 }
 

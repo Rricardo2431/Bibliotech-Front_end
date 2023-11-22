@@ -18,16 +18,16 @@ label {
 
 input,
 select {
-    width: 75%;
+    width: 50%;
     padding: 20px;
     margin-bottom: 16px;
-    border: 5px solid #ccc;
+    border: 3px solid #825405;
     border-radius: 4px;
 }
 
 button {
-    background-color: #7b68ee; 
-    color: #fff; 
+    background-color: #e5d2a5; 
+    color: #000000; 
     border: none;
     padding: 15px 15px;
     border-radius: 20px;
@@ -37,5 +37,5 @@ button {
 }
 
 button:hover {
-    background-color: #5c4dae; 
+    background-color: #a84803; 
 }

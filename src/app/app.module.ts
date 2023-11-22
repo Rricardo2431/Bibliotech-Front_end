@@ -25,8 +25,6 @@ import { LibrarianDeleteComponent } from './librarian/librarian-delete/librarian
 
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +41,7 @@ import { LibrarianDeleteComponent } from './librarian/librarian-delete/librarian
     SingleBookComponent,
     SingleLibraryComponent,
     LibrarianDeleteComponent,
-  
+
 
   ],
   imports: [
@@ -52,7 +50,8 @@ import { LibrarianDeleteComponent } from './librarian/librarian-delete/librarian
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+
   ],
   providers: [
     AuthService,
