@@ -1,0 +1,50 @@
+.title {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 200px;
+}
+
+h1 {
+    font-size: 110px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+.card-container {
+    text-align: center;
+    margin: 115px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+
+    .card {
+        width: 320px;
+        border: 1px solid black;
+        border-radius: 6px;
+        padding: 1em;
+
+        h4 {
+            font-size: 1.7em;
+        }
+
+        p {
+            margin-bottom: 4em;
+        }
+
+        button {
+            width: 100%;
+            margin: 0;
+            border-radius: 6px;
+        }
+    }
+}

@@ -22,6 +22,7 @@ import { SingleBookComponent } from './book-list/single-book/single-book.compone
 import { SingleLibraryComponent } from './library-list/single-library/single-library.component';
 import { RouterModule, Routes } from '@angular/router';
 import { LibrarianDeleteComponent } from './librarian/librarian-delete/librarian-delete.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -41,6 +42,7 @@ import { LibrarianDeleteComponent } from './librarian/librarian-delete/librarian
     SingleBookComponent,
     SingleLibraryComponent,
     LibrarianDeleteComponent,
+    HomeComponent,
 
 
   ],

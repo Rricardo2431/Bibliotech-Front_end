@@ -14,6 +14,7 @@ import { BookAddComponent } from './book-list/book-add/book-add.component';
 import { SingleBookComponent } from './book-list/single-book/single-book.component';
 import { BookDeleteComponent } from './book-list/book-delete/book-delete.component';
 import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: 'librarian-signup', component: SignupComponent },
@@ -23,7 +24,7 @@ const routes: Routes = [
   { path: 'book-add', component: BookAddComponent },
   { path: 'library-add', component: LibraryAddComponent },
   { path: 'library-one', component: SingleLibraryComponent },
-  { path: 'home', component: HeaderComponent},
+  { path: 'home', component: HomeComponent },
   { path: 'librarian-signin', component: SigninComponent },
   { path: 'librarian-signout', component: SignoutComponent },
   { path: 'library-list', component: LibraryListComponent },

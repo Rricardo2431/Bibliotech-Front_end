@@ -1,22 +1,8 @@
-
 <nav>
-    <a href="/librarian-signup"><button type="button">Inscription</button></a>
-    <a href="/librarian-signin"><button type="button">Connexion</button></a>
-    <a href="/librarian-signin"><button type="button">Déconnexion</button></a>
-
+    <p>BIBLIOTECH</p>
+    <div>
+        <a href="/librarian-signup"><button type="button">Inscription</button></a>
+        <a href="/librarian-signin"><button class="btn-2" type="button">Connexion</button></a>
+        <a href="/librarian-signin"><button type="button">Déconnexion</button></a>
+    </div>
 </nav>
-
-<div class="title">
-
-    <h1>BIBLIOTECH</h1>
-    <h3>L'outil d'optimisation de votre gestion bibliothécaire, conçu pour simplifier vos tâches et maximiser votre efficacité</h3>
-</div>
-
-<div class="redirect">
-    <button (click)="redirectionPage('/library-list')">Liste des bibliothèques</button>
-    <button (click)="redirectionPageTwo('/book-list')">Liste des référentiels</button>
-    <button (click)="redirectionPageThree('/book-one')">Détails du référentiel</button>
-    <button (click)="redirectionPageFour('/library-one')">Détails d'une bibliothèque</button>
-    <button (click)="redirectionPageFive('/library-add')">Ajout d'une bibliothèque</button>
-    <button (click)="redirectionPageSix('/book-add')">Ajout d'un référentiel</button>
-  </div>
