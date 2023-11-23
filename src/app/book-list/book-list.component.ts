@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LibraryService } from '../services/library.service';
 import { Book } from '../models/book';
 import { BookService } from '../services/book.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-book-list',
@@ -12,7 +13,10 @@ export class BookListComponent implements OnInit {
 
   bookList: Book[] = [];
 
-  constructor(private bookAll: BookService) { }
+  constructor(
+    private bookAll: BookService,
+    private router: Router
+    ) { }
 
 
 ngOnInit(): void {
@@ -36,6 +40,11 @@ getAllBook(): void {
 }
 )
 }
+
+redirectionPageSeven(route: string) {
+  this.router.navigate(['/home']);
+ }
+
 
 }
 

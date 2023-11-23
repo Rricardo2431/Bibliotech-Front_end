@@ -1,21 +1,25 @@
-<div *ngFor="let book of bookList" class="book-container">
 
+  <button class="button-back" (click)="redirectionPageSeven('/home')">RETOUR</button>
+
+<div *ngFor="let book of bookList" class="book-container">
+  
+  
+  <div class="book-title">{{ book.title }}</div>
+  <div class="book-info">
+    {{ book.category }}
+    {{ book.quantity }}
+  </div>
+  
+  
+  <div *ngFor="let library of book.libraries" class="library-container">
+    {{ library.collection }}
+    {{ library.location }}
+    {{ library.dateInventory }}
+  </div>
   <div class="button">
     <button (click)="deleteBookById(book.id.toString())">Supprimer le référentiel</button>
   </div>
-
-  <div class="book-title">{{ book.title }}</div>
-  <div class="book-info">
-      {{ book.category }}
-      {{ book.quantity }}
-  </div>
-
   
-  <div *ngFor="let library of book.libraries" class="library-container">
-      {{ library.collection }}
-      {{ library.location }}
-      {{ library.dateInventory }}
-  </div>
 </div>
 
 

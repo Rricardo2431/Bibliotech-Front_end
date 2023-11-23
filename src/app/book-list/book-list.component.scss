@@ -12,15 +12,50 @@
 }
 
 .book-info {
-    margin-bottom: 16px;
+    margin-bottom: 50px;
     font-size: 20px;
 }
 
 .library-container {
-    background-color: #ffffff;
-    padding: 10px;
-    border: 1px solid #141414;
+
+    padding: 28px;
+    border-radius: 10px;
+    
+    font-size: 15px;
+   
+    font-weight: bold;
+    margin: -15px;
+    color: #a84803;
+}
+
+.button-back {
+    background-color: #a84803;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
     border-radius: 20px;
-    margin-top: 10px;
+    cursor: pointer;
     font-size: 20px;
+    margin: 10px;
+
+}
+
+
+.button-back:hover {
+    background-color: #000000;
+}
+
+button {
+    background-color: #9c9687;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #a84803;
 }

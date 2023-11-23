@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'librarian-signup', component: SignupComponent },
   { path: 'book-delete', component: BookDeleteComponent },
   { path: 'library-delete', component: LibraryDeleteComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'librarian-signin', pathMatch: 'full' },
   { path: 'book-add', component: BookAddComponent },
   { path: 'library-add', component: LibraryAddComponent },
   { path: 'library-one', component: SingleLibraryComponent },

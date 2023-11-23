@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LibraryService } from '../services/library.service';
 import { Library } from '../models/library';
-
+import { Router } from '@angular/router';
 
 
 
@@ -15,7 +15,10 @@ export class LibraryListComponent implements OnInit {
   libraryList: Library[] = [];
 
   
-  constructor(private libraryAll: LibraryService) { }
+  constructor(
+    private libraryAll: LibraryService,
+    private router: Router
+    ) { }
 
   ngOnInit(): void {
     this.libraryAll.getAllLibraries()
@@ -25,4 +28,10 @@ export class LibraryListComponent implements OnInit {
       }
       )
   }
+
+  redirectionPageSeven(route: string) {
+    this.router.navigate(['/home']);
+   }
+  
+
 }

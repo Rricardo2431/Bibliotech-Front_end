@@ -1,32 +1,51 @@
 .library-container {
-   
+
     padding: 20px;
     border-radius: 35px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px; 
+    margin: 20px;
 }
 
 .collection {
-    font-weight: bold; 
+    font-weight: bold;
     margin-bottom: 25px;
     font-size: 42px;
 }
 
 .location {
 
-    font-size: 26px;
-    margin-bottom: 18px;
-    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 2px;
+    margin-top: 50px;
+    font-weight: bold;
+    color: #a84803;
 }
 
 
 .book-container {
-    background-color: #fff; 
-    padding: 18px;
+    background-color: #fff;
+    padding: 35px;
     border: 1px solid #ccc;
     border-radius: 25px;
     margin-top: 14px;
-    font-size: 20px;
+    font-size: 16px;
+    margin-right: 445px;
 }
 
 
+.button-back {
+    background-color: #a84803;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+
+button:hover {
+    background-color: #000000;
+}

@@ -4,7 +4,7 @@ import { Library } from 'src/app/models/library';
 import { UserRole } from 'src/app/models/userrole';
 import { AuthService } from 'src/app/services/auth.service';
 import { HttpClient } from '@angular/common/http';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -18,7 +18,8 @@ export class SignupComponent implements OnInit {
 constructor(
   private authService: AuthService,
   private httpclient: HttpClient,
-  private route: ActivatedRoute
+  private route: ActivatedRoute,
+  private router: Router
   )
 {}
 
@@ -40,6 +41,10 @@ ngOnInit(): void {
 signup() {
   this.authService.signupLibrarian(this.newUser)
 }
+
+redirectionPageSeven(route: string) {
+  this.router.navigate(['/librarian-signin']);
+ }
 
 
 }

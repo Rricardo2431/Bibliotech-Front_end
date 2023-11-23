@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LibraryService } from 'src/app/services/library.service';
 import { HttpClient } from '@angular/common/http';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Library } from 'src/app/models/library';
 import { Book } from 'src/app/models/book';
 import { librarian } from 'src/app/models/librarian';
@@ -19,6 +19,7 @@ export class LibraryAddComponent implements OnInit {
     private addSingleLibrary: LibraryService,
     private httpclient: HttpClient,
     private route: ActivatedRoute,
+    private router: Router
 
   ) { }
 
@@ -51,6 +52,11 @@ export class LibraryAddComponent implements OnInit {
       });
 
   }
+
+  redirectionPageSeven(route: string) {
+    this.router.navigate(['/home']);
+   }
+
 
 }
 

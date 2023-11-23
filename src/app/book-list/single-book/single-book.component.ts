@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from 'src/app/models/book';
 import { BookService } from 'src/app/services/book.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -16,7 +16,8 @@ id: string = "";
 
 constructor(
   private SingleBookGet: BookService,
-  private route : ActivatedRoute
+  private route : ActivatedRoute,
+  private router: Router
     ) {}
 
     ngOnInit(): void {}
@@ -30,6 +31,10 @@ constructor(
         )
 
     }
+    redirectionPageSeven(route: string) {
+      this.router.navigate(['/home']);
+     }
+
 }
 
 

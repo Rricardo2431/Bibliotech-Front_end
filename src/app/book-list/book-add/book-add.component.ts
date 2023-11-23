@@ -3,6 +3,7 @@ import { BookService } from 'src/app/services/book.service';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
 import { Book } from 'src/app/models/book';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-book-add',
@@ -14,7 +15,8 @@ export class BookAddComponent implements OnInit{
 constructor(
   private addSingleBook: BookService,
   private httpclient: HttpClient,
-  private route: ActivatedRoute
+  private route: ActivatedRoute,
+  private router: Router
 ) { }
 
 listModelBook: Book[] = [];
@@ -45,6 +47,10 @@ addBook(): void {
       console.log(data);
      
     });
-
 }
+
+redirectionPageSeven(route: string) {
+  this.router.navigate(['/home']);
+ }
+
 }

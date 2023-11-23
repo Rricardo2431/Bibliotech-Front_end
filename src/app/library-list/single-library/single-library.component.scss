@@ -1,10 +1,9 @@
 .library-container {
-    background-color: #dec18a; 
+     
     padding: 85px;
-    border-radius: 150px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+   
     width: 300px; 
-    margin: 185px; 
+    margin: 18px; 
 }
 
 h2 {
@@ -16,8 +15,8 @@ h2 {
 
 input {
     width: 85%;
-    padding: 20px;
-    margin-bottom: 5px;
+    padding: 12px;
+    margin-bottom: 8px;
     border: 1px solid #353535;
     border-radius: 4px;
     font-size: 20px;
@@ -27,7 +26,7 @@ button {
     background-color: #9c9687; 
     color: #fff; 
     border: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 20px;
     cursor: pointer;
     font-size: 20px;
@@ -46,4 +45,19 @@ p {
 
 .collection {
     font-weight: bold; 
+}
+
+.button-back {
+    background-color: #a84803; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.button-back:hover {
+    background-color: #000000; 
 }

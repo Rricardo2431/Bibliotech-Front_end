@@ -45,6 +45,8 @@ export class SigninComponent implements OnInit {
 
   }
 
-  
+  redirectionPageEight(route: string) {
+    this.router.navigate(['/librarian-signup']);
+   }
 
 }

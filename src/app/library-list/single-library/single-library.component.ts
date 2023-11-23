@@ -1,7 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { Library } from 'src/app/models/library';
 import { LibraryService } from 'src/app/services/library.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-single-library',
@@ -15,7 +15,8 @@ id: string = "";
  
 constructor(
   private SingleLibraryGet: LibraryService,
-  private route : ActivatedRoute
+  private route : ActivatedRoute,
+  private router : Router
     ) {} 
 
     ngOnInit(): void {
@@ -29,8 +30,12 @@ constructor(
         console.log(data);
       }
       )
-  
-}
+  }
+
+  redirectionPageSeven(route: string) {
+    this.router.navigate(['/home']);
+   }
+
 }
   
   
